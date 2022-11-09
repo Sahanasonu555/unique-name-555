@@ -1,0 +1,42 @@
+<template>
+<div>
+	<lightning-layout vertical-align="space" multiple-rows="true" class="x-large">
+		<lightning-layout-item flexibility="auto" padding="around-small" class="custom-box">
+			<lightning-card title="ADD">
+				<lightning-button label="SHOW ADD" slot="actions" onclick={add}></lightning-button>
+				<template if:true={isShowAdd}>
+					<c-cal-task></c-cal-task>
+				</template>
+				<p slot="footer">Card Footer</p>
+			</lightning-card>
+		</lightning-layout-item>
+		<lightning-layout-item flexibility="auto" padding="around-small" class="custom-box">
+			<lightning-card title="SUB">
+				<lightning-button label="SHOW SUB" slot="actions" onclick={sub}></lightning-button>
+				<template if:true={isShowSub}>
+					<c-cal-sub></c-cal-sub>
+				</template>
+				<p slot="footer">Card Footer</p>
+			</lightning-card>
+		</lightning-layout-item>
+		<lightning-layout-item flexibility="auto" padding="around-small" class="custom-box">
+			<lightning-card title="MULTIPLY">
+				<lightning-button label="SHOW MULTIPLY" slot="actions" onclick={multiply}></lightning-button>
+				<template if:true={isShowMul}>
+					<c-multiply></c-multiply>
+				</template>
+				<p slot="footer">Card Footer</p>
+			</lightning-card>
+		</lightning-layout-item>
+		<lightning-layout-item flexibility="auto" padding="around-small" class="custom-box">
+			<lightning-card title="DIV">
+				<lightning-button label="SHOW DIV" slot="actions" onclick={div}></lightning-button>
+				<template if:true={isShowDiv}>
+					<c-cal-div></c-cal-div>
+				</template>
+				<p slot="footer">Card Footer</p>
+			</lightning-card>
+		</lightning-layout-item>
+	</lightning-layout>
+</div>
+</template>

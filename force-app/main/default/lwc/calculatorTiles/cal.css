@@ -1,0 +1,9 @@
+:host {
+	--sds-c-card-color-background: linear-gradient(180deg, rgba(255,255,255,1) 80%, #fae8d2 100%);
+}
+.calculator-tiles {
+	display: block;
+	border: 1px solid #e74a52;
+	border-radius: .25rem;
+	background-color: #33b8f0;
+}

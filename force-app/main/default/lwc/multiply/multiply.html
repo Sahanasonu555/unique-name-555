@@ -1,0 +1,8 @@
+<template>
+    <lightning-card  title="MULTIPLICATION">
+        <lightning-input label = "Number 1" name = "Num1" onchange = "{handleChange1}"></lightning-input>
+        <lightning-input label = "Number 2" name = "Num2" onchange = "{handleChange2}"></lightning-input>
+        <lightning-button label = "Multiply" onclick = "{calciwork}" ></lightning-button>
+        <lightning-input label = "Result" name = "Result" read-only = "true" value = "{Result}"></lightning-input>
+    </lightning-card>
+</template>

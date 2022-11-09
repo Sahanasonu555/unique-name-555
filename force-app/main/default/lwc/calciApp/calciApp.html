@@ -1,0 +1,48 @@
+<template>
+<lightning-layout multiple-rows>
+<lightning-layout-item size="4" padding="horizontal-small">
+    <lightning-card  title="ADDITION">
+        <lightning-input label = "Number 1" name = "Num11" onchange={handlenum1}></lightning-input>
+        <lightning-input label = "Number 2" name = "Num22" onchange={handlenum2}></lightning-input>
+        <!--lightning-button label = "DIV" onclick = "{calciwork3}" ></lightning-button-->
+        <lightning-input label = "Result" name = "Resultr0" read-only = "true" value = "{Resultr0}"></lightning-input>
+    <!--c-calculatorjump></c-calculatorjump-->
+</lightning-card>
+    </lightning-layout-item>
+
+    <lightning-layout-item size="4" padding="horizontal-small">
+        <lightning-card  title="SUBTRACT">
+            <lightning-input label = "Number 1" name = "Num33" onchange={handlenum3}></lightning-input>
+            <lightning-input label = "Number 2" name = "Num44" onchange={handlenum4}></lightning-input>
+            <!--lightning-button label = "DIV" onclick = "{calciwork3}" ></lightning-button-->
+            <lightning-input label = "Result" name = "Resultr1" read-only = "true" value = "{Resultr1}"></lightning-input>
+        <!--c-calculatorjump></c-calculatorjump-->
+    </lightning-card>
+        </lightning-layout-item>
+
+        <lightning-layout-item size="4" padding="horizontal-small">
+            <lightning-card  title="MULTIPLICATION">
+                <lightning-input label = "Number 1" name = "Num55" onchange={handlenum5}></lightning-input>
+                <lightning-input label = "Number 2" name = "Num66" onchange={handlenum6}></lightning-input>
+                <!--lightning-button label = "DIV" onclick = "{calciwork3}" ></lightning-button-->
+                <lightning-input label = "Result" name = "Resultr2" read-only = "true" value = "{Resultr2}"></lightning-input>
+            <!--c-calculatorjump></c-calculatorjump-->
+        </lightning-card>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="4" padding="horizontal-small">
+                <lightning-card  title="DIVSION">
+                    <lightning-input label = "Number 1" name = "Num77" onchange={handlenum7}></lightning-input>
+                    <lightning-input label = "Number 2" name = "Num88" onchange={handlenum8}></lightning-input>
+                    <!--lightning-button label = "DIV" onclick = "{calciwork3}" ></lightning-button-->
+                    <lightning-input label = "Result" name = "Resultr3" read-only = "true" value = "{Resultr3}"></lightning-input>
+                <!--c-calculatorjump></c-calculatorjump-->
+            </lightning-card>
+                </lightning-layout-item>
+
+</lightning-layout>
+<lightning-button label = "ADD" onclick = "{click1}" ></lightning-button>
+<lightning-button label = "SUB" onclick = "{click2}" ></lightning-button>
+<lightning-button label = "Multiply" onclick = "{click3}" ></lightning-button>
+<lightning-button label = "DIV" onclick = "{click4}" ></lightning-button>
+</template>
